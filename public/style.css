@@ -1,0 +1,96 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff0f5;
+}
+
+.navbar {
+  background-color: #ff69b4;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.visible-section {
+  display: block;
+}
+
+.hidden-section {
+  display: none;
+}
+
+.home-header {
+  text-align: center;
+  padding: 30px;
+}
+
+.main-logo {
+  max-width: 180px;
+  display: block;
+  margin: 0 auto;
+}
+
+.profile-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+  width: 60%;
+  max-width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.pink-button {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pink-button:hover {
+  background-color: #ff1493;
+}
+
+.chat-box {
+  border: 1px solid #ddd;
+  margin: 20px;
+  padding: 15px;
+  background-color: white;
+  height: 300px;
+  overflow-y: auto;
+  border-radius: 10px;
+}
+
+.typing {
+  margin: 0 20px;
+  font-style: italic;
+  color: #666;
+}
+
+.end-center {
+  text-align: center;
+  margin-top: 50px;
+}

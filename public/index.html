@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dr. Bumpy - Pregnancy AI</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="logo.png" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#" onclick="navigateTo('profile-setup')">Home</a></li>
+      <li><a href="#" onclick="navigateTo('chat-section')">Chat</a></li>
+      <li><a href="#" onclick="navigateTo('stats-section')">Stats</a></li>
+      <li><a href="#" onclick="navigateTo('end')">End</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="profile-setup" class="visible-section">
+    <div class="home-header">
+      <img src="logo.png" alt="Dr. Bumpy Logo" class="main-logo" />
+      <h1 class="welcome-text">Welcome to Dr. Bumpy 🤰</h1>
+      <p class="description">Your personalized pregnancy companion for symptom checking, trimester tips, emotional support, and more!</p>
+    </div>
+    <form id="user-profile-form" class="profile-form">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="date" id="dob" required />
+      <input type="number" id="height" placeholder="Height (cm)" />
+      <input type="number" id="weight" placeholder="Weight (kg)" />
+      <div class="form-buttons">
+        <button type="submit" class="pink-button form-btn">Start Chat</button>
+        <button type="button" id="skip-profile" class="pink-button form-btn">Skip</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Chat Section -->
+  <section id="chat-section" class="hidden-section">
+    <div id="chat-box" class="chat-box"></div>
+    <div id="typing" class="typing">👩‍⚕️ Dr. Bumpy is typing...</div>
+    <form id="chat-form">
+      <input type="text" id="user-input" placeholder="Type your message..." autocomplete="off" />
+      <button type="submit">Send</button>
+    </form>
+    <button id="download-btn">Download Report</button>
+  </section>
+
+  <!-- Stats Section -->
+  <section id="stats-section" class="hidden-section">
+    <h2>Your Pregnancy Stats</h2>
+    <div id="stats-content">
+      <p><strong>Name:</strong> <span id="stat-name"></span></p>
+      <p><strong>Date of Birth:</strong> <span id="stat-dob"></span></p>
+      <p><strong>Height:</strong> <span id="stat-height"></span> cm</p>
+      <p><strong>Weight:</strong> <span id="stat-weight"></span> kg</p>
+    </div>
+  </section>
+
+  <!-- End Section -->
+  <section id="end" class="hidden-section end-center">
+    <h2>🎉 Thank You for using Dr. Bumpy!</h2>
+    <p>We wish you a joyful and healthy pregnancy journey. 💖</p>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
